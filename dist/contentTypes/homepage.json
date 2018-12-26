@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/homepage.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/homepage.json",
   "title": "Homepage Accelerator",
   "description": "Homepage Accelerator",
   "allOf": [
@@ -25,14 +25,14 @@
               "contentType": {
                 "title": "Content Types",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/slider.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/promobanner.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/text.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/externalblock.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/splitblock.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/cardlist.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/image.json"
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/slider.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/promobanner.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/video.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/text.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/externalblock.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/splitblock.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/cardlist.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/image.json"
                 ]
               }
             }

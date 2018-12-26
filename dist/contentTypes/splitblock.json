@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/splitblock.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/splitblock.json",
   "title": "Split Block Accelerators",
   "description": "Split Block Accelerator",
   "allOf": [
@@ -26,9 +26,9 @@
               "contentType": {
                 "title": "content",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-with-CRS-v2.0.0/dist/contentTypes/text.json"
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/image.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/video.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/text.json"
                 ]
               }
             }
