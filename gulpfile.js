@@ -280,7 +280,8 @@ gulp.task('templates-copy', function () {
     return gulp
         .src([
             'src/renders/**/templates/*.html',
-            'src/reusable/templateChooser.html'
+            'src/reusable/templateChooser.html',
+            'src/reusable/contentWrapper.html'
         ])
         .pipe(
             rename(function (path) {
@@ -340,6 +341,15 @@ gulp.task('copy-icons', function () {
         .pipe(gulp.dest('dist/icons'));
 });
 
+/** Copy Slots **/
+gulp.task('copy-slots', function () {
+    return gulp
+        .src([
+            'src/slots/**'
+        ])
+        .pipe(gulp.dest('dist/slots'));
+});
+
 gulp.task('addLoryLicense', ['copy-node-modules'], function () {
     return gulp
         .src('node_modules/lory.js/LICENSE')
@@ -392,6 +402,7 @@ gulp.task(
         'del',
         'copy-node-modules',
         'copy-icons',
+        'copy-slots',
         'templates-copy',
         'addLoryLicense',
         'addShowdownLicense',

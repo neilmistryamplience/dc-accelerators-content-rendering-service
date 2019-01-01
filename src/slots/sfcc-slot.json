@@ -1,0 +1,17 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "id": "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/slots/sfcc-slot.json",
+    "title": "SFCC Slot",
+    "description": "SFCC Slot",
+    "type": "object",
+    "properties": {
+        "slot_id": {
+            "type": "string"
+        }
+    }
+}
