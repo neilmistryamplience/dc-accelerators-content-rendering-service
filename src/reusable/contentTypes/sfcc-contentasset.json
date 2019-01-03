@@ -1,0 +1,77 @@
+{  
+   "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
+   "allOf":[  
+      {  
+         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      }
+   ],
+   "id":"https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/sfcc-contentasset.json",
+   "title":"SFCC - Content Asset",
+   "description":"Content Asset Container",
+   "type":"object",
+   "properties": {
+      "content-asset-id": {
+         "type": "string",
+         "title": "Content Asset ID",
+         "minLength": 1,
+         "maxLength": 256
+      },
+      "page-url" : {
+        "type" : "string",
+        "title": "Page URL",
+        "minLength": 1,
+        "maxLength": 256
+      },
+      "library-folders" : {
+        "type" : "array",
+        "title": "Folders",
+        "items":{
+          "type":"string",
+          "title": "Folder",
+          "enum":[
+                  "mens-blog",
+                  "womens-blog",
+                  "shoes-blog",
+                  "suits-blog",
+                  "dresses-blog",
+                  "blog",
+                  "blog-archives"
+                ]
+        },      
+        "minItems":1,
+        "maxItems":3
+      },
+      "content-asset-body": {
+        "title": "Content Asset Body",
+        "description": "HTML sent to the content asset body",
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "Content Types",
+                "enum": [
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/image.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/text.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/video.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/cardlist.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/banner.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/slider.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/splitblock.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/promobanner.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/externalblock.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/blog.json",
+                    "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/homepage.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+   },
+   "required": ["content-asset-id"],
+   "propertyOrder": ["content-asset-id","page-url","library-folders","content-asset-body"]
+}

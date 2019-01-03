@@ -1,4 +1,4 @@
-'use strict';
+    'use strict';
 
 var es = require('event-stream');
 var gulp = require('gulp');
@@ -87,7 +87,7 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 });
 
 gulp.task('sfcc-copy', function () {
-    gulp.src('./src/reusable/slotContentTypes/sfcc-slot-accelerators.json')
+    gulp.src('./src/reusable/contentTypes/sfcc-contentasset.json')
         .pipe(replace())
         .pipe(
             gulp.dest('./dist/contentTypes/')
@@ -390,7 +390,8 @@ gulp.task(
         'renders-types-copy',
         'renders-js-min',
         'addPackageStyles',
-        'addMinStyles'
+        'addMinStyles',
+        'sfcc-copy',
     ],
     function () {
     }
@@ -425,7 +426,7 @@ gulp.task('sfcc', ['buildAllWithoutReload', 'sfcc-copy'], function () {
 
 gulp.task(
     'buildAllMin',
-    ['build', 'addDependencies', 'addContentTypes', 'minifyPack', 'server'],
+    ['build', 'addDependencies', 'addContentTypes', 'sfcc-copy', 'minifyPack', 'server'],
     function () {
         return gulp.src('*').pipe(connect.reload());
     }

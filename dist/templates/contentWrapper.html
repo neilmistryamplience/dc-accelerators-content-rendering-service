@@ -1,0 +1,7 @@
+{{#if (test this.[@type] (toRegex ".*/dc-slot-example.json")) ~}}
+{{> templateChooser this.content }}
+{{~/if}}
+
+{{#if (test this.[@type] (toRegex ".*/page.json")) ~}}
+{{> templateChooser this.content }}
+{{~/if}}
