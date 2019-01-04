@@ -5,3 +5,7 @@
 {{#if (test this.[@type] (toRegex ".*/page.json")) ~}}
 {{> templateChooser this.content }}
 {{~/if}}
+
+{{#if (test this.[@type] (toRegex ".*/sfcc-contentasset.json")) ~}}
+{{> templateChooser this.content-asset-body }}
+{{~/if}}
