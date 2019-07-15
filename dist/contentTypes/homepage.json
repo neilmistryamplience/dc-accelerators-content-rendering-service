@@ -26,6 +26,7 @@
                 "title": "Content Types",
                 "enum": [
                   "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/slider.json",
+                  "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/banner.json",
                   "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/promobanner.json",
                   "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/video.json",
                   "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/text.json",

@@ -35,6 +35,7 @@
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/text.json",
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/video.json",
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/cardlist.json",
+                                "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/card.json",
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/banner.json",
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/slider.json",
                                 "https://presalesadisws.s3.amazonaws.com/sfcc/dynamic-content/v2.0/dist/contentTypes/splitblock.json",
