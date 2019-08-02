@@ -1,6 +1,6 @@
 <div class="amp-dc-banner js_dc_banner">
     <div class="amp-dc-banner-pic-wrap">
-        {{> acc-template-banner-image bannerImage.[0]}}
+        {{> acc-template-banner-image image}}
     </div>
     <div class="amp-dc-banner-info-wrap
     {{#if stackMobileLayout}}amp-dc-info-bottom{{/if}}
@@ -18,7 +18,7 @@
              {{#if textPositionLeft}}left:{{textPositionLeft}}%;{{/if}}
              {{#if textPositionTop}}top:{{textPositionTop}}%;{{/if}}"
     >
-        <div class="amp-dc-banner-info" data-opacity="{{bannerOpacity}}" data-color="{{bannerColor}}" style="{{#if textColour}}color: #{{textColour}};{{/if}} {{#if bannerColor}}background: #{{bannerColor}}{{/if}}">
+        <div class="amp-dc-banner-info" data-opacity="{{bannerOpacity}}" data-color="{{bannerColor}}" style="{{#if textColor}} color: {{textColor}};{{/if}} {{#if bannerColor}} background: {{bannerColor}}; {{/if}}">
             {{#if header}}
             <div class="amp-dc-banner-header">{{header}}</div>
             {{/if}}
@@ -28,9 +28,9 @@
             {{#if description}}
             <div class="amp-dc-banner-description">{{description}}</div>
             {{/if}}
-            {{#if button.label}}
-            <a href="{{button.value}}"
-               class="amp-dc-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+            {{#if link.label}}
+            <a href="{{link.value}}"
+               class="amp-dc-banner-button {{#if style}}{{style}}{{/if}}">{{link.label}}</a>
             {{/if}}
         </div>
     </div>

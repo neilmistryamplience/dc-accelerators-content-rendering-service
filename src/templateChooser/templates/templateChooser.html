@@ -6,7 +6,7 @@
 {{> acc-template-video }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/promo")) ~}}
+{{#if (test this.[@type] (toRegex ".*/promo.json")) ~}}
 {{> acc-template-promo }}
 {{~/if}}
 
@@ -50,7 +50,7 @@
 {{> acc-template-banner }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/page")) ~}}
+{{#if (test this.[@type] (toRegex ".*/container")) ~}}
 {{> acc-template-page }}
 {{~/if}}
 

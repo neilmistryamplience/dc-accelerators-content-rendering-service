@@ -9,88 +9,72 @@ import {
 import promoStyles from './promo.scss';
 
 export const sampleContent = {
-  "@id": "http://content.cms.amplience.com/3b0db833-ed08-4993-aec8-c24fc0f38c5c",
+  "backgroundColor": "#131060",
+  "topLine": "Velit saepe quia. Ea",
+  "toplineColor": "#0e681e",
+  "bottomLine": "Dolorem qui aliquam",
+  "bottomlineColor": "#5c2a1c",
   "_meta": {
-    "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-    "name": "promo-banner-single-section"
+    "schema": "https://www.amplience.com/examples/promo.json",
+    "deliveryId": "29884303-abe2-4d1d-bcd0-dd5fa243386b"
   },
-  "topLine": "Click here to score 20% off with your first app order* (t&c’s apply)",
-  "link": {
+  "icon": {
+    "id": "b22b2297-52ab-4abb-a440-9d7ef3921f5a",
+    "name": "1",
+    "endpoint": "dem",
+    "defaultHost": "i1.adis.ws",
+    "mediaType": "image",
     "_meta": {
-      "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
-    },
-    "value": "http://dev-solutions.s3.amazonaws.com/dc-demo-site/dist/productlist/index.html?c=f49907fd-99df-4446-85b7-4c3235aac82a&s=e6bdb253-db3c-4458-b5cc-0d90aa02e114"
+      "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+    }
   },
-  "backgroundColour": "d3d3d3",
-  "toplineColour": "000000",
-  "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json"
+  "link": {
+    "label": "Aspernatur rerum aut",
+    "type": "URL",
+    "value": "Aut ut et et consequ",
+    "_meta": {
+      "schema": "https://www.amplience.com/examples/link.json"
+    }
+  }
 };
 
 
 const samplePromoListContent = {
-  "@id": "http://content.cms.amplience.com/1b05fb00-e845-412b-80e0-33ee82789913",
   "_meta": {
-    "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobanner.json",
-    "name": "accelerator-promo-banner-1"
+    "schema": "https://www.amplience.com/examples/promolist.json",
+    "deliveryId": "f5ad358b-15c7-4fce-bea8-52f6bdfa3311"
   },
-  "bannerSection": [{
-      "@id": "http://content.cms.amplience.com/990ecee0-6976-496a-8b77-d23cb4e42976",
-      "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-      "_meta": {
-        "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-        "name": "accelerator-promo-banner-section-1"
-      },
-      "topLine": "free next uk day delivery",
-      "link": {
-        "_meta": {
-          "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
-        },
-        "value": "http://dev-solutions.s3.amazonaws.com/dc-demo-site/dist/productlist/index.html?c=f49907fd-99df-4446-85b7-4c3235aac82a&s=e6bdb253-db3c-4458-b5cc-0d90aa02e114"
-      },
-      "backgroundColour": "000000",
-      "bottomLine": "hurry ends in 3 days",
-      "bottomlineColour": "ffffff",
-      "toplineColour": "ffffff"
-    },
+  "promos": [
     {
-      "@id": "http://content.cms.amplience.com/90e694ec-a761-4c32-8581-b6c14ea37690",
-      "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
+      "backgroundColor": "#2e5f0d",
+      "topLine": "Similique qui quod f",
+      "toplineColor": "#2a4e39",
+      "bottomLine": "Fuga quia eveniet oc",
+      "bottomlineColor": "#5e4f6a",
       "_meta": {
-        "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-        "name": "accelerator-promo-banner-section-2"
+        "schema": "https://www.amplience.com/examples/promo.json",
+        "deliveryId": "e4c96d05-ffb3-44a7-9d07-a7ae8eae0b67"
       },
-      "topLine": "40% off boots, bags and more",
-      "link": {
+      "icon": {
+        "id": "53a36410-2056-4a1c-b317-a299166894da",
+        "name": "2",
+        "endpoint": "dem",
+        "defaultHost": "i1.adis.ws",
+        "mediaType": "image",
         "_meta": {
-          "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
-        },
-        "value": "http://dev-solutions.s3.amazonaws.com/dc-demo-site/dist/productlist/index.html?c=f49907fd-99df-4446-85b7-4c3235aac82a&s=e6bdb253-db3c-4458-b5cc-0d90aa02e114"
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
       },
-      "backgroundColour": "ffffff",
-      "bottomLine": "t&c's apply, code: wrapup",
-      "bottomlineColour": "000000",
-      "toplineColour": "000000"
-    },
-    {
-      "@id": "http://content.cms.amplience.com/da807558-e551-4ed1-a73a-3530a24abc6b",
-      "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-      "_meta": {
-        "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobannersection.json",
-        "name": "promo-banner-section-3"
-      },
-      "topLine": "30% student discount",
       "link": {
+        "label": "Soluta tempore a sim",
+        "type": "URL",
+        "value": "Perferendis quo eos",
         "_meta": {
-          "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
-        },
-        "value": "http://dev-solutions.s3.amazonaws.com/dc-demo-site/dist/productlist/index.html?c=f49907fd-99df-4446-85b7-4c3235aac82a&s=e6bdb253-db3c-4458-b5cc-0d90aa02e114"
-      },
-      "backgroundColour": "d3d3d3",
-      "bottomLine": "excludes sale. t&c's apply",
-      "toplineColour": "000000"
+          "schema": "https://www.amplience.com/examples/link.json"
+        }
+      }
     }
-  ],
-  "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/promobanner.json"
+  ]
 };
 
 storiesOf('Promo', module)

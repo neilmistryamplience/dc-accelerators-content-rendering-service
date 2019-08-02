@@ -114,6 +114,15 @@
                 right: 35px;
             }
 
+            &:before {
+            content: '';
+            display: inline-block;
+            height: auto;
+            vertical-align: middle;
+            margin-right: -1em;
+            /* Adjusts for spacing */
+        }
+
             &.amp-dc-info-bottom {
                 position: relative;
                 top: 0 !important;

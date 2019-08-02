@@ -31,6 +31,11 @@
         var b = parseInt(dataColor.slice(4, 6), 16);
 
         infoPanel.style.backgroundColor = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + dataOpacity + ')';
+
+        if (dataColor.indexOf('rgb') === 0) {
+            var str1 = dataColor.slice(dataColor.indexOf("(")+1,dataColor.indexOf(")"));
+            infoPanel.style.backgroundColor = 'rgba(' + str1 + ', ' + dataOpacity + ')';
+        }
     }
 
     /**

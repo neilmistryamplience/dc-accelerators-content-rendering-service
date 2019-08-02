@@ -22,7 +22,7 @@ export const sampleContent = {
         "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/card.json",
         "name": "accelerator-card-1"
       },
-      "cardImage": {
+      "image": {
         "@id": "http://content.cms.amplience.com/ece6b9f2-b58a-4420-937d-a05e9970a459",
         "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
         "_meta": {
@@ -44,7 +44,7 @@ export const sampleContent = {
         "imageAltText": "alt txt",
         "seoText": "seo txt"
       },
-      "cardName": "Card 1",
+      "name": "Card 1",
       "link": {
         "value": "http://google.com",
         "_meta": {
@@ -61,7 +61,7 @@ export const sampleContent = {
         "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/card.json",
         "name": "accelerator-card-2"
       },
-      "cardImage": {
+      "image": {
         "@id": "http://content.cms.amplience.com/bd429fca-6d14-4cfd-8d54-ee0e085c6edd",
         "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
         "_meta": {
@@ -83,7 +83,7 @@ export const sampleContent = {
         "imageAltText": "alt txt",
         "seoText": "seo txt"
       },
-      "cardName": "Card 2",
+      "name": "Card 2",
       "link": {
         "label": "link card 2",
         "value": "http://google.com",
@@ -100,7 +100,7 @@ export const sampleContent = {
         "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/card.json",
         "name": "accelerator-card-1"
       },
-      "cardImage": {
+      "image": {
         "@id": "http://content.cms.amplience.com/ece6b9f2-b58a-4420-937d-a05e9970a459",
         "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
         "_meta": {
@@ -122,7 +122,7 @@ export const sampleContent = {
         "imageAltText": "alt txt",
         "seoText": "seo txt"
       },
-      "cardName": "Card 1",
+      "name": "Card 1",
       "link": {
         "value": "http://google.com",
         "_meta": {
@@ -139,7 +139,7 @@ export const sampleContent = {
         "schema": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/card.json",
         "name": "accelerator-card-2"
       },
-      "cardImage": {
+      "image": {
         "@id": "http://content.cms.amplience.com/bd429fca-6d14-4cfd-8d54-ee0e085c6edd",
         "@type": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
         "_meta": {
@@ -161,7 +161,7 @@ export const sampleContent = {
         "imageAltText": "alt txt",
         "seoText": "seo txt"
       },
-      "cardName": "Card 2",
+      "name": "Card 2",
       "link": {
         "label": "link card 2",
         "value": "http://google.com",

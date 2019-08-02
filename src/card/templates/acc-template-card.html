@@ -1,45 +1,39 @@
 <div class="amp-dc-card">
     {{#if link}}
     <a class="amp-dc-card-wrap" href="{{link.value}}">
-    {{else}}
-    <div class="amp-dc-card-wrap">
-        {{/if}}
-
-        <div class="amp-dc-card-img-wrap">
-            {{> templateChooser cardImage}}
-        </div>
-
-
-        <div class="amp-dc-card-text-wrap
-        {{#unless cardName}}
+        {{else}}
+        <div class="amp-dc-card-wrap">
+            {{/if}}
+            <div class="amp-dc-card-img-wrap">
+                {{> acc-template-image image}}
+            </div>
+            <div class="amp-dc-card-text-wrap
+        {{#unless name}}
             {{#unless description}}
                 {{#unless link}}
                         amp-dc-hide
                  {{/unless}}
             {{/unless}}
         {{/unless}}">
-
-            {{#if cardName}}
-            <div class="amp-dc-card-name">{{cardName}}</div>
-            {{/if}}
-            {{#if description}}
-            <p class="amp-dc-card-description">{{description}}</p>
-            {{/if}}
-            {{#if link}}
-            <div class="amp-dc-card-link">
-                {{#if link.label}}
-                {{link.label}}
-                {{else}}
-                >>
+                {{#if name}}
+                <div class="amp-dc-card-name">{{name}}</div>
+                {{/if}}
+                {{#if description}}
+                <p class="amp-dc-card-description">{{description}}</p>
+                {{/if}}
+                {{#if link}}
+                <div class="amp-dc-card-link">
+                    {{#if link.label}}
+                    {{link.label}}
+                    {{else}}
+                    >>
+                    {{/if}}
+                </div>
                 {{/if}}
             </div>
-            {{/if}}
-        </div>
-
-        {{#if link}}
-        </a>
-        {{else}}
-    </div>
-    {{/if}}
-
+            {{#if link}}
+    </a>
+    {{else}}
+</div>
+{{/if}}
 </div>
