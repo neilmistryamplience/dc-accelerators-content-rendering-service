@@ -54,6 +54,14 @@
 {{> acc-template-page }}
 {{~/if}}
 
+{{#if (test this.[@type] (toRegex ".*/productList")) ~}}
+{{> acc-template-productList }}
+{{~/if}}
+
 {{#if (test this.[@type] (toRegex ".*/sfcc-slot-accelerators")) ~}}
 {{> sfcc-contentWrapper }}
+{{~/if}}
+
+{{#if (test this.[@type] (toRegex ".*/sfcc-contentasset-flexible.json")) ~}}
+{{> templateChooser this.content-asset-body }}
 {{~/if}}
